@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-section{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(110deg, white 68%, #ffc800 32%);
+}
+/* navbar */
+    #logo{
+        font-size: 30px;
+        margin-left: 30px;
+        color: black;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px black;
+    }
+     
+  #logo img{
+    margin-bottom: 10px;
+  }
+  #logo span{
+    color: #ffc800;
+  }
+  .nav-item{
+    margin-left: 3 ;
+  }
+  .nav-item .nav-link{
+    color: black;
+    font-weight: bold;
+    transition: 0.5s;
+
+  }
+  #first-child{
+    color: #ffc800;
+    text-shadow: 1px 1px 1px black;
+
+  }
+  .nav-item .nav-link:hover{
+    color: #ffc800;
+    text-shadow: 1px 1px 1px black;
+
+  }
+  .icons{
+    margin-right: 30px;
+  }
+  .icons i{
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  @media screen and(max-width:982px) {
+    .icons{
+        margin-left: 25px;
+    }
+  }
+/* navbar */
+
+/* home content */
+ .home{
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+     z-index: 0;
+    font-family: "Roboto", sans-serif;
+ }
+ .home .img{
+    flex: 1 1 300px;
+ }
+ .home .img img{
+    width: 92%;
+    animation: c 5s linear infinite;
+ }
+ @keyframes c{
+    0%,100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+ }
+ .home .content{
+    flex: 1 1 400px;
+    margin-top: 30px;
+ }
+ .content h1{
+    margin-left: 42px;
+    font-weight: bold;
+    font-size: 65px;
+    text-shadow: -1px 0px 0px black;
+ }
+ .content h1 span{
+    color: #ffc800;
+    text-shadow: 1px 1px 1px black;
+    font-size:100px ;
+    font-weight: bold;
+ }
+ .content p{
+    margin-left: 42px;
+
+ }
+ #btn{
+    margin-left: 42px;
+    
+ }
+ #btn button{
+   width: 150px;
+   height: 32px;
+   letter-spacing: 3px;
+   font-weight: bold;
+   background-color: black;
+   color: white;
+   border-radius: 5px;
+   transition: 0.5s ease;
+   cursor: pointer;
+ }
+ #btn button:hover{
+   background-color: #ffc800;
+   color: black;
+   border: none;
+ }
+ #btn span{
+   margin-left: 10px;
+   font-size: 20px;
+   font-weight: bold;
+ }
+ @media screen and(max-width:1200px) {
+  .home-section{
+   height: 90vh;
+  } 
+ }
+ @media screen and(max-width:799px) {
+   .home-section{
+    height: 140vh;
+   } 
+  }
+  @media screen and(max-width:550px) {
+   .home-section{
+    height: 110vh;
+   } 
+  }
+  @media screen and(max-width:420px) {
+   .content h1 span{
+    font-size: 80px;
+   } 
+  }
+  @media screen and(max-width:320px) {
+   .content h1{
+    font-size: 50px;
+   } 
+   .content h1 span{
+      font-size: 60px;
+     } 
+  }
+  
+  
+
+/* home content */
+
+/* top icons start */
+#top-icons{
+  margin-top: 50px;
+}
+#top-icons h1{
+  text-align: center;
+  font-weight: bold;
+  font-family:"Dancing Script", cursive;
+  border-bottom: 2px solid #ffc800;
+  text-shadow: 1px 1px 1px black;
+
+}
+#top-icons i img{
+width: 100px;
+}
+
+#top-icons i h3{
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
+}
+/* top icons end */
+
+/* cards start */
+
+#cards{
+margin-top: 100px;
+font-family:"Roboto", sans-serif; 
+}
+#cards .card h3{
+  color: #ffc800;
+  font-weight: bold;
+}
+#cards .card p{
+  color: #ffc800;
+  font-weight: bold;
+}
+#rn{
+  width: 150px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  color: #ffc800;
+  border: 2px solid #ffc800;
+  font-weight: bold;
+  text-shadow: 1px 1px 1pz black;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#rn:hover{
+  background-color: #ffc800;
+  color: white;
+}
+/* cards end */
+
+/* burger start */
+#burger{
+  margin-top: 100px;
+  font-family:"Roboto", sans-serif;
+}
+#burger h1{
+  text-align: center;
+  font-weight: bold;
+  font-family:"Dancing Script", cursive;
+  border-bottom: 2px solid #ffc800;
+  text-shadow: 1px 1px 1px black;
+}
+#burger .card{
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#burger .card:hover{
+  background-color: #ffc800;
+}
+#burger .card h3{
+  font-weight: bold;
+  text-shadow: 0px 0px 1px black;
+}
+#burger .card h5 span{
+  color: black;
+  float: right;
+}
+
+/* burger end */
+
+/* banner start */
+.banner{
+  margin-top: 100px;
+  width: 100%;
+  height: 60vh;
+   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./image/images\ \(12\).jpg);
+  background-size: cover;
+  text-align: center;
+  font-family:"Roboto", sans-serif;
+
+}
+.banner h3{
+  padding-top: 132px;
+  color: #ffc800;
+  font-size: 32px;
+}
+.banner p{
+  color: #ffc800;
+}
+#btnorder{
+  width: 200px;
+  height: 32px;
+  color: #ffc800;
+  background: transparent;
+  border: 2px solid #ffc800;
+  transition: 0.5s;
+
+}
+#btnorder:hover{
+  background-color: #ffc800;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+/* banner end */
+
+/* top card start */
+
+#topcards{
+  margin-top: 50px;
+}
+#topcards .card{
+  background-color: #ffc800;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#topcards .card:hover{
+  transform: translate(-10px);
+}
+/* top card end */
+
+/* about start */
+#about{
+  margin-top: 100px;
+}
+#about h1{
+  text-align: center;
+  font-weight: bold;
+  font-family:"Dancing Script", cursive;
+  border-bottom: 2px solid #ffc800;
+  text-shadow: 1px 1px 1px black;
+}
+#about h2{
+  text-align: center;
+  font-weight: bold;
+  font-family:"Dancing Script", cursive;
+  border-bottom: 2px solid #ffc800;
+  text-shadow: 1px 1px 1px black;
+}
+#about p{
+  font-family:"Roboto", sans-serif;
+  background-color: #ffc800;
+}
+#readmorebtn button{
+  width: 200px;
+  height: 32px;
+  background: transparent;
+  border: 2px solid #ffc800;
+  color: #ffc800;
+  font-weight: bold;
+  letter-spacing: 3px;
+  transition: 0.5s;
+}
+#about .card{
+  background-color: #ffc800;
+}
+#readmorebtn button:hover{
+  background-color: #ffc800;
+  color: white;
+}
+/* about end */
+/* contact start */
+#contact{
+  margin-top: 10px;
+  border: 2px solid #ffc800;
+}
+#h2{
+  text-align: center;
+  font-weight: bold;
+  font-family:"Dancing Script", cursive;
+  border-bottom: 2px solid #ffc800;
+  text-shadow: 1px 1px 1px black;
+}
+#contact h3{
+  text-align: center;
+  font-weight: bold;
+  font-family:"Dancing Script", cursive;
+  border-bottom: 2px solid #ffc800;
+  text-shadow: 1px 1px 1px black;
+}
+#contact p{
+  font-family:"Roboto", sans-serif;
+}
+#contact input{
+  width: 500px;
+  height: 42px;
+  margin-top: 20px;
+  background-color: #ffc800;
+  border: none;
+  border-radius: 5px;
+}
+#contact ::placeholder{
+  color: black;
+  font-family:"Roboto", sans-serif; 
+  padding-left: 10px;
+  font-weight: bold;
+}
+#btnmessage{
+  margin-top: 10px;
+  width: 200px;
+  height: 32px;
+  background: transparent;
+  border: 2px solid #ffc800;
+  letter-spacing: 3px;
+  font-weight: bold;
+  transition: 0.5s;
+  
+
+}
+#btnmessage:hover{
+  background-color: #ffc800;
+  color: white;
+}
+#contact i{
+  color: #ffc800;
+  font-size: 20px;
+  margin-top: 30px;
+} 
+#contact i span{
+  font-family:"Dancing Script", cursive;
+}
+@media screen and(max-width:1200px) {
+  #contact input{
+    width: 350px;
+  }
+  
+}
+
+@media screen and(max-width:385px) {
+  #contact input{
+    width: 250px;
+  }
+  
+}
+
+/* contact end */
